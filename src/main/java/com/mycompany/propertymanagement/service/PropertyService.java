@@ -14,5 +14,5 @@ public interface PropertyService {
     PropertyDTO updatePropertyDescription(@RequestBody PropertyDTO propertyDTO, Long propertyId);
     PropertyDTO updatePropertyPrice(@RequestBody PropertyDTO propertyDTO, Long propertyId);
 
-    void deleteProerty(Long propertyId);
+    void deleteProperty(Long propertyId);
 }

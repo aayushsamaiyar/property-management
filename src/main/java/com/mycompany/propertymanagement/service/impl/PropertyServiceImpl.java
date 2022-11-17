@@ -52,11 +52,9 @@ public class PropertyServiceImpl implements PropertyService {
         if(optEn.isPresent()){
             PropertyEntity pe = optEn.get();
             pe.setTitle(propertyDTO.getTitle());
-            pe.setOwnerName(propertyDTO.getOwnerName());
             pe.setAddress(propertyDTO.getAddress());
             pe.setPrice(propertyDTO.getPrice());
             pe.setDescription(propertyDTO.getDescription());
-            pe.setOwnerEmail(propertyDTO.getOwnerEmail());
             dto = propertyConverter.convertEntitytoDTO(pe);
             propertyRepository.save(pe);
         }
@@ -90,7 +88,7 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public void deleteProerty(Long propertyId) {
+    public void deleteProperty(Long propertyId) {
         propertyRepository.deleteById(propertyId);
     }
 
