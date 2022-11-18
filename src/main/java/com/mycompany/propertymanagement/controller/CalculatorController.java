@@ -30,8 +30,7 @@ public class CalculatorController {
 
         Double result = null;
         result = calculatordto.getNum1() * calculatordto.getNum2() * calculatordto.getNum3() * calculatordto.getNum4();
-        ResponseEntity<Double> responseEntity = new ResponseEntity<Double>(result, HttpStatus.CREATED);
-        return responseEntity;
+        return new ResponseEntity<Double>(result, HttpStatus.CREATED);
     }
 
 
