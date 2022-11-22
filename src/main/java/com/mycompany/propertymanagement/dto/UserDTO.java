@@ -18,7 +18,7 @@ public class UserDTO {
     private String ownerName;
     @NotNull(message = "owner email is mandatory")
     @NotEmpty(message = "password cannot be empty")
-    @Size(min = 1, max = 50, message = "owner email shhould be between 1 to 50 characters")
+    @Size(min = 1, max = 50, message = "owner email should be between 1 to 50 characters")
     private String ownerEmail;
     private String phone;
     @NotNull
