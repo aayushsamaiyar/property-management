@@ -25,4 +25,10 @@ public class UserDTO {
     @Size(min=8, max=16, message = "password between 8 to 16")
     @NotEmpty(message = "password cannot be empty")
     private String password;
+
+    private String street;
+    private String city;
+    private String postalCode;
+    private String country;
+    private String houseNo;
 }
